@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
+    <script src='ja.js'></script>
+</head>
+<body>
+    <div class="container">
+        
+   <ul class="navbar">
+       <li>
+        <a id="'nav">File</a> 
+       <ul class="dropdown">
+         <li onclick="newfile()"><a>New </a></li>
+         <li onclick="openfile()"><a>Open  </a></li>
+         <li onclick="savefile()"><a>Save </a></li>
+         <li onclick="saveasfile()"> <a>Save As </a></li>   
+       </ul>
+    </li>
+     <li> 
+        <a id="'nav">Edit</a> 
+      <ul class="dropdown">
+        <li onclick="undo()"><a>Undo</a></li>
+        <li id="copy" onclick="copyit()"><a>Copy</a></li>
+        <li id ="paste" onclick="pasteit()"><a>Paste</a></li>
+        <li id ="cut" onclick="cutit()"><a>Cut</a></li>  
+        
+        <li id ="replace" onclick="replaceit()"><a>Replace</a></li>   
+      </ul>
+    </li>
+     <li> 
+        <a class="'nav">Style</a> 
+      <ul class="dropdown">
+        <li onclick="fontsize()"><a> Change Font Size</a></li>
+        <li onclick="changefont()"><a>Change Font</a></li>
+        <li onclick="boldit()"><a>Bold</a></li>
+        <li onclick="italicit()"><a>Italic</a></li>
+        <li onclick="underlineit()"><a>Underline</a></li>
+      </ul>
+    </li>
+    <li>  
+        <a id="'nav">View</a> 
+      <ul class="dropdown">
+        <li onclick="zoominit()"><a>Zoom in</a></li>
+        <li onclick="zoomoutit()"><a>Zoom out</a></li>
+      </ul>
+    </li>
+      
+   <li>  
+     <a class="'nav">Help</a> 
+      <ul class="dropdown">
+        <li onclick="helpit()"><a>About</a></li>  
+      </ul>
+
+    </li>
+     </ul>
+     <div id="editor">
+   <textarea name="text" id="text" cols="30" rows="30"></textarea>
+  </div>
+
+</div>
+</body>
+</html>
